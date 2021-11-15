@@ -6,22 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2 uzduotis</title>
     <style>
-
+        * { box-sizing: border-box; }
+        h1 {
+            text-align: center;
+        }
+        .www {
+            background-color: aqua;
+            width: 100%;
+        }
+        .kaz {
+            width:  33%;
+            display: inline-block;
+            text-align: left;
+        }
+        .ger {   
+            width:  33%;
+            display: inline-block;
+            text-align: center;
+        }
+        .kaina {
+            width:  33%;
+            display: inline-block;
+            text-align: right;
+        }
+        .Pastraipa {
+            text-align: center;
+        }
+        .bobis {
+            display: inline-block;
+            width: 100%;
+            block-size: width 100%;
+        }
+        .kuponas {
+            text-align: center;
+            border-style: dashed;
+            height: 50%;
+        }
+        h5 {
+            color: red;
+        }
+        h4 {
+            color: red;
+        }
+        .a2 {
+            float: left;
+            display: inline-block;
+            width: 33%;
+            text-align: left;
+        }
+        .a3 {
+            float: left;
+            display: inline-block;
+            width: 33%;
+            text-align: left;
+        }
+        .a1 {
+            float: left;
+            display: inline-block;
+            width: 33%;
+        }
+        img { 
+            height: 50%;
+        }
+        footer {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <div>
-        <h1>News</h1>
+    <div class="News">
+         <h1>News</h1>
     </div>
     <div>
-       <div>
-           <div>
-                <span>www.kazkas.bit</span>
-                <span>Geros naujienos</span>
-                <span>Kaina</span>
+        <div class="www">
+             <div class="kaz" >www.kazkas.kuku</div> 
+             <div class="ger">Geras</div>
+             <div class="kaina" >Kaina</div>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <div>
+                <h2 class="Pastraipa">Pastraipa</h2>
             </div>
-       </div>
+        </div>
     </div>
-    
+
+    <div class="bobis">
+        <div class="a1">
+            <div> <img src="./img/9.jpg" alt="pic" width="100%">  </div> 
+            <div class="kuponas"> <h4> Kuponas </h4></div> 
+        </div>
+        <div class="a2"> 
+            <h5> Bobis </h5>
+            <p>
+            Mauris laoreet dolor mauris, non vulputate massa consectetur a. Quisque sed posuere felis. Ut accumsan vel ex eu imperdiet. Phasellus pretium felis ac ante fringilla elementum. Curabitur pulvinar lacus sed urna iaculis, sed ultrices eros sagittis. Vivamus bibendum leo vitae tempus mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+        </div>
+        <div class="a3">  
+            <h5> Bobis </h5>
+            <p>
+            Mauris laoreet dolor mauris, non vulputate massa consectetur a. Quisque sed posuere felis. Ut accumsan vel ex eu imperdiet. Phasellus pretium felis ac ante fringilla elementum. Curabitur pulvinar lacus sed urna iaculis, sed ultrices eros sagittis. Vivamus bibendum leo vitae tempus mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p> 
+        </div>
+    </div>
+    <footer>
+        <a href="#"> Top </a>
+		<p>Bit bit bit &copy;  2021 All rights reserved</p>
+    </footer>
+    </footer>
 </body>
 </html>
