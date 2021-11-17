@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalendorius</title>
     <style>
-        
+        * { box-sizing: border-box; }
         body {
         }
         .table {
-            display: inline-table;
+            display: inline-flex;
             background-color: aqua;
             width: 100%;
 
@@ -24,7 +24,26 @@
             float: right;
         }
         .st1 {
+            display: inline-flex;
+            background-color: blue;
             color: red;
+            width: 43%;
+        }
+        .st2 {
+            background-color: blueviolet;
+            width: 15%;
+            text-align: center;
+            margin: 20px;
+            padding: 15px;
+        }
+        .st3 {
+            background-color: chartreuse;
+        }
+        .st4 {
+            background-color: chocolate;
+        }
+        .st5 {
+            background-color: coral;
         }
         .prop1 {
             background-color: red;
@@ -73,13 +92,16 @@
         .tekstas {
             width: 89%;
         }
+        header {
+            display: inline;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="table">
-                <div class="st1"><h1><img src="./img/wifi.png" alt="logo" width="25px">Most Popular Stories</h1></div>
-                <div class="st2"><a href="">Whats This?</a></div>
+                <div class="st1"><h1><img src="./img/wifi.png" alt="logo" width="25px">Most Popular Stories</h1><a href="">Whats This?</a></div>
+                <div class="st2"></div>
                 <div class="st3"> <button type="button">NOW</button></div>
                 <div class="st4"><a href="">TODAY</a></div>
                 <div class="st5"><a href="">THIS WEEK</a></div>
