@@ -7,72 +7,74 @@
     <title>Kalendorius</title>
     <style>
         * { box-sizing: border-box; }
-        body {
-        }
-        .table {
-            display: inline-flex;
-            background-color: aqua;
-            width: 100%;
 
+        @media screen and (min-width: 600px) {
+            /* For desktop */
+                body {
+                background-color: rgb(231, 231, 247);
+                }
         }
-        .tr1 {
-            display: inline;
-            float: left;
-        }
-        .tr2 {
-            display: inline;
-            float: right;
+        @media screen and (max-width: 600px) {
+             /* For mobile phones: */
+            
+            body {
+                background-color: pink;
+            }
         }
         .st1 {
-            display: inline-flex;
-            background-color: blue;
+            background-color: rgb(174, 174, 235);
             color: red;
-            width: 43%;
+            width: 35%;
         }
         .st2 {
-            background-color: blueviolet;
-            width: 15%;
-            text-align: center;
-            margin: 20px;
-            padding: 15px;
+            width: 10%;
         }
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+            
         .st3 {
+            width: 10%;
             background-color: chartreuse;
         }
         .st4 {
+            width: 10%;
             background-color: chocolate;
         }
         .st5 {
+            width: 10%;
             background-color: coral;
         }
         .prop1 {
             background-color: red;
             color: white;
             border: 1px solid black;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 0.625rem;
+            border-top-right-radius: 0.625rem;
             text-align: center;
-            font-size: 14px;
-            height: 25px;
+            font-size: 0.875rem;
+            height: 1,5625rem;
         }
         .skai {
-            padding: 10px;
+            padding: 0.625rem;
             color: red;
             font-size: 60px;
             font-weight: bold;
             text-align: center;
             border-left: 1px solid black;
             border-right: 1px solid black;
-            height: 80px;
+            height: 5rem;
         }
         .prop2 {
             background-color: rgb(56, 56, 56);
             color: white;
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 0.625rem;
+            border-bottom-left-radius: 0.625rem;
             text-align: center;
-            font-size: 14px;
-            height: 25px;
+            font-size: 0.875rem;
+            height: 1,5625rem;
         }
         .up {
             display: inline-block;
@@ -84,28 +86,35 @@
            display: inline-block;
         }
         .table1 {
+            display: inline-block;
             width: 10%;
         }
         .cont {
-            display: inline-block;
+            display: inline;
         }
         .tekstas {
-            width: 89%;
+            display: inline-block;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 0.75rem;
+            border-left: 1px solid black;
         }
-        header {
-            display: inline;
+        .table {
+            float: left;
+            background-color: rgb(69, 221, 221);
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="clearfix">
         <div class="table">
-                <div class="st1"><h1><img src="./img/wifi.png" alt="logo" width="25px">Most Popular Stories</h1><a href="">Whats This?</a></div>
-                <div class="st2"></div>
-                <div class="st3"> <button type="button">NOW</button></div>
-                <div class="st4"><a href="">TODAY</a></div>
-                <div class="st5"><a href="">THIS WEEK</a></div>
-            </div>
+            <div class="st1"> <h1> <img src="./img/wifi.png" alt="logo" width="25rem"> Most Popular Stories </h1></div>
+            <div class="st2"> <a href="">Whats This?</a> </div>
+            <div class="st3"> <button type="button">NOW</button></div>
+            <div class="st4"><a href="">TODAY</a></div>
+            <div class="st5"><a href="">THIS WEEK</a></div>
         </div>
     </header>
 
